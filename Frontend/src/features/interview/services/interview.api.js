@@ -17,7 +17,7 @@ export const generateInterviewReport = async ({jobDescription, resume, selfDescr
     
     const response = await api.post("/api/interview/", formData,{
         headers: {
-            // "Content-Type": "multipart/form-data",
+            "Content-Type": "multipart/form-data",
             "Authorization": `Bearer ${token}`
         }   
     })
